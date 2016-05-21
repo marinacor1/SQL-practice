@@ -17,4 +17,7 @@ SELECT avg(cost) FROM clothes;
 -- Minimum cost for clothes
 SELECT min(cost) FROM clothes;
 
--- 
+INSERT into clothes (name, cost, type) VALUES (NULL, NULL, NULL);
+
+-- Count for clothes with a name
+SELECT count(name) FROM clothes;
