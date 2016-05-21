@@ -3,10 +3,10 @@ CREATE TABLE clothes(id SERIAL, name TEXT, cost INT, type TEXT);
 SELECT * FROM clothes;
 
 INSERT INTO clothes (name, cost, type)
-VALUES ('gogo t-shirt', 1200, 'top'),
-       ('gogo boots', 4900, 'shoe'),
-       ('silver skirt', 2700, 'bottom'),
-       ('purple bracelet', 400, 'accessories');
+VALUES ('gogo t-shirt', 1200, 'tops'),
+       ('gogo boots', 4900, 'shoes'),
+       ('silver skirt', 2700, 'bottoms'),
+       ('purple pants', 400, 'bottoms');
 
 -- Total cost for all clothes
 SELECT sum(cost) FROM clothes;
@@ -21,3 +21,7 @@ INSERT into clothes (name, cost, type) VALUES (NULL, NULL, NULL);
 
 -- Count for clothes with a name
 SELECT count(name) FROM clothes;
+
+-- Return all bottoms
+
+SELECT type FROM clothes WHERE type = 'bottoms'; 
