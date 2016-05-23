@@ -26,4 +26,9 @@ SELECT count(name) FROM clothes;
 
 SELECT type FROM clothes WHERE type = 'bottoms';
 
-SELECT * FROM clothes INNER JOIN brands ON clothes.brand_id = brands.id; 
+-- Drop clothes table
+DROP TABLE clothes;
+
+
+
+SELECT * FROM clothes INNER JOIN brands ON clothes.brand_id = brands.id;
