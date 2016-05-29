@@ -29,6 +29,8 @@ SELECT type FROM clothes WHERE type = 'bottoms';
 -- Drop clothes table
 DROP TABLE clothes;
 
+-- Return only certain info
+
 
 
 SELECT * FROM clothes INNER JOIN brands ON clothes.brand_id = brands.id;
